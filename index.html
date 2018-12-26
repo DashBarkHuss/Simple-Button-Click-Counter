@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<head>
+    <style>
+    #one{
+        width: 200px;
+        height: 200px;
+        border: 1px solid blue;
+    }
+    button{
+        width: 200px;
+        background: yellow;
+        box-shadow: 4px 4px 4px #333;
+    }
+    
+    </style>
+    <script type ="text/javascript">
+        var i = 1;
+
+        function myFunc() {
+            var one = document.getElementById("one");
+            if (one.innerHTML=="click the button"){
+                one.innerHTML = "You clicked the button"
+            } else {
+                i += 1;
+                one.innerHTML = "You clicked the button " + i + " time/s."
+            }
+
+        }
+    </script>
+</head>
+<html>
+        <body>
+            <div id="one">click the button</div>
+            <button onclick="myFunc()"> Click </button>
+        </body>
+            
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE HTML>
+<head>
+    <style>
+    #one{
+        border-radius: 20px;
+        height: 170px;
+        width: 170px;
+        border: 2px solid blue;
+    }
+    button{
+        height: 30px;
+        width: 170px;
+        background: lightblue;
+        border-radius: 20px;
+        border:none;
+        box-shadow: 3px 3px 12px #bbb;
+    }
+    </style>
+    <script type="text/javascript">
+        var i=0;
+        function myFunc(){
+            var x = document.getElementById("one");
+            
+            if (x.innerHTML == "Hi"){
+                console.log(x.innerHTML == "Hi");
+                x.innerHTML = "you clicked the button";
+                console.log(x);
+                } else {
+                i += 1;
+                x.innerHTML = "You clicked the button " + i +" time/s.";
+            } 
+        }
+    </script>
+</head>
+<html>
+    <body>
+        <div id="one">Hi</div>
+        <button onclick="myFunc()">click</button>
+
+    </body>
+</html>
+ -->
